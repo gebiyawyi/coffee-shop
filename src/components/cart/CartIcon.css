@@ -1,0 +1,97 @@
+.cart-icon {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* For custom image - Near Circle Shape */
+.cart-icon-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;  /* Changed from 'contain' to 'cover' for better fit */
+  transition: transform 0.3s;
+  
+  /* NEAR CIRCLE SHAPE - Rounded corners */
+  border-radius: 25px;  /* 25px creates a squircle/near circle shape */
+  
+  /* Optional: Add border for better visibility */
+  border: 2px solid #D4AF37;
+  
+  /* Optional: Add background color */
+  background-color: #6F4E37;
+  
+  /* Optional: Add shadow for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart-icon:hover .cart-icon-image {
+  transform: scale(1.1);
+  border-radius: 30px;  /* Slightly more rounded on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #E74C3C;  /* Red for visibility */
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  min-width: 28px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid white;
+  animation: bounce 0.3s ease;
+}
+
+/* Animation for badge */
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cart-icon-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 18px;  /* Smaller near circle for mobile */
+  }
+  
+  .cart-badge {
+    padding: 3px 8px;
+    font-size: 0.7rem;
+    min-width: 22px;
+    top: -6px;
+    right: -8px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .cart-icon-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+  }
+  
+  .cart-badge {
+    padding: 2px 6px;
+    font-size: 0.65rem;
+    min-width: 18px;
+    top: -5px;
+    right: -6px;
+  }
+}

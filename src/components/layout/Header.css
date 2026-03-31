@@ -1,0 +1,140 @@
+.header {
+  background-color: var(--background-white);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) 0;
+}
+
+/* ===== LOGO STYLES WITH CIRCLE ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+/* Circle container for logo image */
+.logo-image {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  
+  /* MAKE IT CIRCLE */
+  border-radius: 50% 50%;
+  
+  /* Optional: Add border for better visibility */
+  border: green;  /* Gold border */
+  
+  /* Optional: Add background color */
+  background-color: #6F4E37;
+  
+  /* Optional: Add shadow for depth */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  
+  /* Transition for hover effect */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for circle logo */
+.logo:hover .logo-image {
+  transform: scale(1.05);
+  border-color: #FFD700;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: var(--font-secondary);
+  color: var(--primary-brown);
+  transition: color 0.3s ease;
+}
+
+.logo:hover .logo-text {
+  color: #D4AF37;  /* Gold on hover */
+}
+
+/* ===== END OF LOGO STYLES ===== */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s;
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.nav-link:hover {
+  color: var(--primary-brown);
+}
+
+.mobile-menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--background-white);
+    flex-direction: column;
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  /* Mobile logo sizes - Circle */
+  .logo-image {
+    width: 50px;
+    height: 50px;
+    border-width: 2px;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+  }
+  
+  .logo {
+    gap: 0.5rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .logo-image {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .logo-text {
+    font-size: 1.2rem;
+  }
+}

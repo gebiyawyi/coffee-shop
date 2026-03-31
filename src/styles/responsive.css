@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+}

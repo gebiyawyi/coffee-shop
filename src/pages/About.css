@@ -1,0 +1,28 @@
+.about-page {
+  padding: var(--spacing-lg) 0;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-text h2 {
+  color: var(--primary-brown);
+  margin: var(--spacing-lg) 0 var(--spacing-sm);
+}
+
+.about-text p {
+  line-height: 1.8;
+  margin-bottom: var(--spacing-md);
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-text ul li {
+  padding: var(--spacing-sm) 0;
+  font-size: 1.1rem;
+}
