@@ -5,13 +5,13 @@ function About() {
   return (
     <div className="about-page">
       <div className="container">
-        <h1 className="section-title">About Coffee Haven</h1>
+        <h1 className="section-title">About M<sup>2</sup> Coffee</h1>
 
         <div className="about-content">
           <div className="about-text">
             <h2>Our Story</h2>
             <p>
-              Founded in 2020, Coffee Haven started with a simple mission: to
+              Founded in 2020, M<sup>2</sup> Coffee started with a simple mission: to
               bring the finest roasted and grounded coffee to coffee lovers
               everywhere.
             </p>

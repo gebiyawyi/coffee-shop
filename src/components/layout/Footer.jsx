@@ -22,7 +22,7 @@ function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-section">
-            <h3>MULUR COFFEE</h3>
+            <h3>M<sup>2</sup> COFFEE</h3>
             <p>Premium roasted and grounded coffee delivered to your door.</p>
           </div>
 
@@ -50,7 +50,6 @@ function Footer() {
                 <a href="tel:+251910857444">+251 910 857 444</a>
               </p>
 
-              {/* Email with Icon */}
               <p className="contact-item">
                 <FaEnvelope className="contact-icon" />
                 <a href="mailto:gebiyaw2004@gmail.com">gebiyaw2004@gmail.com</a>
@@ -61,7 +60,7 @@ function Footer() {
           <div className="footer-section">
             <h4>Follow Us</h4>
             <div className="social-links">
-              {/* Telegram Icon */}
+            
               <a
                 href={socialLinks.telegram}
                 target="_blank"
@@ -82,8 +81,6 @@ function Footer() {
               >
                 <FaYoutube />
               </a>
-
-              {/* WhatsApp Icon */}
               <a
                 href={socialLinks.whatsapp}
                 target="_blank"
@@ -98,7 +95,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Mulur Coffee. All rights reserved.</p>
+          <p>&copy; 2024 M<sup>2</sup> Coffee. All rights reserved.</p>
         </div>
       </div>
     </footer>
